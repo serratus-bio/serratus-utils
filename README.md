@@ -2,8 +2,8 @@
 
 A collection of _simple_ and _self-contained_ utilities that could be of interest for anyone working with the serratus platform.
 
-* *simple*, meaning that all the tools in here should do a single, concrete thing well and do that one thing only (following the UNIX philosophy); in a single source file, that is meant to be executed with a simple command line call
-* *self-contained*, meaning that anything needed to run each of these scripts should be present in this repository
+* **simple**, meaning that all the tools in here should do a single, concrete thing well and do that one thing only (following the UNIX philosophy); in a single source file, that is meant to be executed with a simple command line call
+* **self-contained**, meaning that anything needed to run each of these scripts should be present in this repository
 
 If your script is not _simple_ (i.e. requires more than one file or is expected to grow in functionality in the future) it most likely deserves a dedicated repository in [serratus-bio](https://github.com/serratus-bio).
 
@@ -23,7 +23,7 @@ Scripts that extract info from SRA or its related projects (like STAT). So far, 
 
 Returns all [SRA/STAT](https://www.ncbi.nlm.nih.gov/sra/docs/sra-taxonomy-analysis-tool/) taxonomy information found for a specific SRA run id.
 
-*Example*
+**Example**
 `node stat-query-by-sra-id.js --depth=2 ERR2756788`
 
 Queries SRA/STAT for matches found on "Frank the Bat" (SRA ID: ERR2756788).
@@ -31,7 +31,7 @@ Remove the `--depth` argument to print out the full hierarchy of hits.
 The output corresponds to the same data found on the "Analysis" tab on [the NCBI Trace page for this entry](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=ERR2756788&display=analysis).
 
 
-*Output*
+**Output**
 ```
 STAT FOR SRA ID: ERR2756788
 IDENTIFIED                      UNIDENTIFIED                    TOTAL
