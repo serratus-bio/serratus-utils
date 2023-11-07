@@ -24,10 +24,13 @@ Scripts that extract info from SRA or its related projects (like STAT). So far, 
 Returns all [SRA/STAT](https://www.ncbi.nlm.nih.gov/sra/docs/sra-taxonomy-analysis-tool/) taxonomy information found for a specific SRA run id.
 
 **Example**
+
 `node stat-query-by-sra-id.js --depth=2 ERR2756788`
 
 Queries SRA/STAT for matches found on "Frank the Bat" (SRA ID: ERR2756788).
+
 Remove the `--depth` argument to print out the full hierarchy of hits.
+
 The output corresponds to the same data found on the "Analysis" tab on [the NCBI Trace page for this entry](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=ERR2756788&display=analysis).
 
 
