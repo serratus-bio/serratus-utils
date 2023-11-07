@@ -7,7 +7,7 @@ A collection of _simple_ and _self-contained_ utilities that could be of interes
 
 If your script is not _simple_ (i.e. requires more than one file or is expected to grow in functionality in the future) it most likely deserves a dedicated repository in [serratus-bio](https://github.com/serratus-bio).
 
-All scripts should implement a `--help` argument to print out detailed usage information with all the arguments it accepts and an explanation of what they do.
+All scripts should implement a `--help` argument that prints out detailed usage information with all the arguments it accepts and an explanation of what they do.
 
 All scripts should exit with a `0` status code if nothing goes wrong, otherwise they should return a `non-zero` status code. Main output should go to `stdout`, while warnings and errors should go to `stderr`. Furthermore, design these scripts while keeping in mind that they could (and should) be used in a larger pipeline on a UNIX-like environment.
 
@@ -34,7 +34,7 @@ Remove the `--depth` argument to print out the full hierarchy of hits.
 The output corresponds to the same data found on the "Analysis" tab on [the NCBI Trace page for this entry](https://trace.ncbi.nlm.nih.gov/Traces/?view=run_browser&acc=ERR2756788&display=analysis).
 
 
-**Output**
+**Sample Output**
 ```
 STAT FOR SRA ID: ERR2756788
 IDENTIFIED                      UNIDENTIFIED                    TOTAL
@@ -52,5 +52,5 @@ cellular organisms [131567]   8,242,597  46.41%
     Terrabacteria group [1783272]   623,179  3.51%
     FCB group [1783270]   4,656  <0.01%
     PVC group [1783257]   4,458  <0.01%
-    ...
+...
 ```
